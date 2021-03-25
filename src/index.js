@@ -4,7 +4,9 @@ import ReactDOM from 'react-dom';
 // styles
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'soft-ui-design-system/assets/css/soft-design-system.min.css';
+import './css/global.css';
 import './css/header.css';
+import './css/homepage.css';
 
 import App from './App';
 

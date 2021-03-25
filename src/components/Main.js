@@ -1,12 +1,12 @@
 import Header from "./Header";
 // import "./Footer";
-// import "./Page";
+import Homepage from "./Homepage";
 
 function Main() {
   return (
     <div className="main-container-div">
       <Header />
-      {/* <Page /> */}
+      <Homepage />
       {/* <Footer /> */}
     </div>
   );
