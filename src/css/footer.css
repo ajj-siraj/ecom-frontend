@@ -1,0 +1,28 @@
+.footer-container{
+  padding: 50px;
+  margin-top: 200px;
+  margin-bottom: 200px;
+
+
+}
+
+.footer-container li {
+  list-style: none;
+}
+
+.footer-container ul > li:first-child{
+  font-weight:800;
+}
+
+.footer-container .social-media-div{
+  margin-top: 8px;
+  padding: 10px;
+}
+
+.footer-container .social-media-div i{
+  padding-left: 10px;
+}
+
+.footer-container .social-media-title{
+  margin-left: 5px;
+}

@@ -1,5 +1,5 @@
 import Header from "./Header";
-// import "./Footer";
+import Footer from "./Footer";
 import Homepage from "./Homepage";
 
 function Main() {
@@ -7,7 +7,7 @@ function Main() {
     <div className="main-container-div">
       <Header />
       <Homepage />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

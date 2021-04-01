@@ -1,28 +1,31 @@
 import { Container, Col, Row, Card } from "react-bootstrap";
 
 import MainCarousel from "./MainCarousel";
-
-
-import cover2 from "../assets/pexels-r-fera-432059.jpg";
+import FeaturedCarousel from "./FeaturedCarousel";
+import RecommendedProducts from "./RecommendedProducts";
+import NewProducts from "./NewProducts";
+import FeaturedCard from "./subcomponents/FeaturedCard";
 
 function Homepage() {
   return (
-    <Container fluid className="homepage-container mt-5">
+    <Container fluid className="homepage-container mt-5 mr-0 ml-0 p-0">
       <Row>
-        <Col md={8}>
+        <Col>
           <MainCarousel />
         </Col>
-        <Col md={4}>
-        <Card className="bg-dark text-white rounded-0">
-            <Card.Img src={cover2} className="cover-image img-fluid" />
-            <Card.ImgOverlay>
-              <Card.Title>Card title</Card.Title>
-              <Card.Text>
-                This is a wider card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.
-              </Card.Text>
-            </Card.ImgOverlay>
-          </Card>
+      </Row>
+      <Row className="products-container justify-content-center text-center">
+        <RecommendedProducts />
+      </Row>
+      <Row className="products-container justify-content-center text-center">
+        <NewProducts />
+      </Row>
+      <Row className="m-0 p-0 featured-container">
+        <Col sm="6" className="m-0 p-0">
+          <MainCarousel />
+        </Col>
+        <Col sm="6">
+          <FeaturedCard />
         </Col>
       </Row>
     </Container>

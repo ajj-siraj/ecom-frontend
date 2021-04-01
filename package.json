@@ -5,7 +5,9 @@
   "dependencies": {
     "bootstrap": "^4.6.0",
     "cra-template": "1.1.2",
+    "font-awesome": "^4.7.0",
     "gsap": "^3.6.0",
+    "keen-slider": "^5.4.0",
     "react": "^17.0.1",
     "react-bootstrap": "^1.5.2",
     "react-dom": "^17.0.1",
