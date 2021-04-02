@@ -3,7 +3,10 @@
 }
 
 .homepage-container .featured-container .card-img {
+  object-fit: cover;
+  box-shadow: 3px 3px 20px #757575, -3px 0px 20px #535353;
   transition: 0.5s;
+  border-radius: 20px !important;
 }
 
 .homepage-container .featured-container .card:hover .card-img {
@@ -14,6 +17,8 @@
 .homepage-container .featured-container .card {
   position: relative;
   text-align: center;
+  border-radius: 20px !important;
+  border: none;
 }
 
 .homepage-container .featured-container .card-img-overlay {
@@ -33,11 +38,7 @@
 .cover-image {
   height: 400px;
 }
-.homepage-container .featured-container .card-img {
-  object-fit: cover;
-  border-radius: 0;
-  box-shadow: 3px 3px 20px #000, -3px 0px 20px #000;
-}
+
 
 #main-carousel {
   position: relative;
@@ -45,6 +46,7 @@
 }
 #main-carousel .carousel-inner {
   height: 100% !important;
+  border-radius: 20px !important;
 }
 #main-carousel .carousel-item,
 #main-carousel .carousel-item img {

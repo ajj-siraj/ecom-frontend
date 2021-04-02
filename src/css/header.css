@@ -34,3 +34,12 @@
 .main-nav .dropdown button.btn:hover {
   transform: none;
 }
+
+
+#brand-logo {
+  width: 70px;
+}
+
+.logo {
+  font-family: 'Pacifico', cursive;
+}
