@@ -2,10 +2,59 @@
   display: block;
   width: 16.66vw;
   text-align: center;
+  font-family: "Lato", sans-serif;
 }
 
-/* remove the default dropdown styling */
+/* position the dropdown menus */
+.main-nav div:nth-child(1) .dropdown-menu {
+  left: calc(-16.66vw * 0);
+}
+.main-nav div:nth-child(2) .dropdown-menu {
+  left: calc(-16.66vw * 1);
+}
+.main-nav div:nth-child(3) .dropdown-menu {
+  left: calc(-16.66vw * 2);
+}
+.main-nav div:nth-child(4) .dropdown-menu {
+  left: calc(-16.66vw * 3);
+}
+.main-nav div:nth-child(5) .dropdown-menu {
+  left: calc(-16.66vw * 4);
+}
+.main-nav div:nth-child(6) .dropdown-menu {
+  left: calc(-16.66vw * 5);
+}
+
+.main-nav .navbar-links .dropdown-menu {
+  position: absolute !important;
+  display: block;
+  visibility: none;
+  top: 50px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 300px;
+  transition: all 0.3s;
+  opacity: 0;
+  line-height: 50px;
+  border-top:none;
+}
+
+.main-nav .navbar-links.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  top:35px;
+}
+
+.main-nav .navbar-links.dropdown {
+  border-right: 1px solid #ddd;
+
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 .main-nav .dropdown button.btn {
+  /* removes the default dropdown button styling */
   background: none;
   color: inherit;
   border: none;
@@ -15,6 +64,7 @@
   cursor: pointer;
   outline: inherit;
 }
+
 .main-nav .dropdown button.btn::after {
   content: none;
 }
@@ -35,11 +85,71 @@
   transform: none;
 }
 
-
 #brand-logo {
   width: 70px;
 }
 
 .logo {
-  font-family: 'Pacifico', cursive;
+  font-family: "Pacifico", cursive;
+}
+
+.cart-container {
+  position: relative;
+  font-size: 2rem;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.counter-container {
+  width: 20px;
+  height: 20px;
+  background-color: #860000;
+  border-radius: 50%;
+  top: 10%;
+  bottom: 0;
+  left: 70%;
+  right: 0;
+  position: absolute;
+  font-size: 0.8125rem;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  color: #fff;
+}
+
+.counter {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+}
+
+@keyframes slideOut {
+  0% {
+    transform: translateY(1rem);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0rem);
+    opacity: 0;
+  }
+  0% {
+    transform: translateY(1rem);
+    opacity: 1;
+  }
 }
