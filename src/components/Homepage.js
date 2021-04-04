@@ -8,7 +8,7 @@ import FeaturedCard from "./subcomponents/FeaturedCard";
 
 function Homepage() {
   return (
-    <Container fluid className="homepage-container mt-5 mr-0 ml-0 p-0">
+    <Container fluid className="homepage-container mr-0 ml-0 p-0">
       <Row>
         <Col>
           <MainCarousel />

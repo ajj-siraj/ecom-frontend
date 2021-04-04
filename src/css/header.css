@@ -28,7 +28,7 @@
 .main-nav .navbar-links .dropdown-menu {
   position: absolute !important;
   display: block;
-  visibility: none;
+  visibility: hidden;
   top: 50px;
   bottom: 0;
   left: 0;
@@ -38,13 +38,13 @@
   transition: all 0.3s;
   opacity: 0;
   line-height: 50px;
-  border-top:none;
+  border-top: none;
 }
 
 .main-nav .navbar-links.dropdown:hover .dropdown-menu {
   opacity: 1;
   visibility: visible;
-  top:35px;
+  top: 35px;
 }
 
 .main-nav .navbar-links.dropdown {
@@ -53,8 +53,10 @@
   margin-top: 10px;
   margin-bottom: 10px;
 }
-.main-nav .dropdown button.btn {
-  /* removes the default dropdown button styling */
+
+/* removes the default dropdown button styling */
+/* .brand-nav .dropdown a.btn {
+ 
   background: none;
   color: inherit;
   border: none;
@@ -63,27 +65,27 @@
   font: inherit;
   cursor: pointer;
   outline: inherit;
-}
+} */
 
-.main-nav .dropdown button.btn::after {
+.brand-nav .dropdown a::after {
   content: none;
 }
-
-.main-nav .dropdown button.btn:focus {
+/* 
+.brand-nav .dropdown a.btn:focus {
   background: none;
   color: inherit;
   border: none;
   outline: inherit;
 }
-.main-nav .dropdown button.btn:active {
+.brand-nav .dropdown a.btn:active {
   background: none;
   color: inherit;
   border: none;
   outline: inherit;
 }
-.main-nav .dropdown button.btn:hover {
+.brand-nav .dropdown a.btn:hover {
   transform: none;
-}
+} */
 
 #brand-logo {
   width: 70px;
@@ -98,6 +100,27 @@
   font-size: 2rem;
   margin-left: 20px;
   margin-right: 20px;
+  padding: 0;
+  width: fit-content;
+  
+  transition: all 0.2s;
+}
+
+.cart-container:hover {
+  cursor: pointer;
+  background-color: #1d1d1d;
+  border-radius: 50%;
+}
+
+.cart-container:hover i {
+  color: #fff;
+}
+
+.cart-dropdown {
+  position: relative;
+  background-color: #ddd;
+
+  width: 200px;
 }
 
 .counter-container {

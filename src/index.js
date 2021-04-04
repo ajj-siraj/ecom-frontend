@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom';
 
 // styles
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import 'soft-ui-design-system/assets/css/soft-design-system.min.css';
 import 'font-awesome/css/font-awesome.min.css';
+import './css/customized-bootstrap.css';
 import './css/global.css';
 import './css/header.css';
 import './css/footer.css';

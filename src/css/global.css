@@ -3,6 +3,16 @@ html{
   font-family: 'Lato', sans-serif;
 }
 
+ul li {
+  list-style: none;
+}
+
+a, a:hover, a:active, a:visited{
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
 .page-heading {
   margin: 0px 0px 15px 0px;
   font-family: 'Pacifico', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -29,18 +39,4 @@ html{
 }
 .products-container .card-group{
   width: 100%;
-}
-
-.btn.btn-primary {
-  background-color: #8dcde0;
-  color: #1a1a1a;
-  outline: none !important;
-  border-color: #fff;
-}
-.btn.btn-primary:focus {
-  background-color: #8dcde0;
-}
-
-.btn.btn-primary:active {
-  background-color: #8dcde0;
 }

@@ -19,12 +19,12 @@ function NavLinks() {
         onMouseEnter={() => dropdownHover(true, 0)}
         onMouseLeave={() => dropdownHover(false, 0)}
       >
-        <Dropdown.Toggle>Dropdown</Dropdown.Toggle>
+        <Dropdown.Toggle as="a">Electronics</Dropdown.Toggle>
 
         <Dropdown.Menu align="right">
-          <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-          <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-          <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+          <Dropdown.Item href="#/action-1">Computers</Dropdown.Item>
+          <Dropdown.Item href="#/action-2">Laptops</Dropdown.Item>
+          <Dropdown.Item href="#/action-3">Monitors</Dropdown.Item>
         </Dropdown.Menu>
       </Dropdown>
 
@@ -35,7 +35,7 @@ function NavLinks() {
         onMouseEnter={() => dropdownHover(true, 1)}
         onMouseLeave={() => dropdownHover(false, 1)}
       >
-        <Dropdown.Toggle>Dropdown</Dropdown.Toggle>
+        <Dropdown.Toggle as="a">Home Appliances</Dropdown.Toggle>
 
         <Dropdown.Menu align="right">
           <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
@@ -51,7 +51,7 @@ function NavLinks() {
         onMouseEnter={() => dropdownHover(true, 2)}
         onMouseLeave={() => dropdownHover(false, 2)}
       >
-        <Dropdown.Toggle>Dropdown</Dropdown.Toggle>
+        <Dropdown.Toggle as="a">Fashion</Dropdown.Toggle>
 
         <Dropdown.Menu align="right">
           <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
@@ -67,7 +67,7 @@ function NavLinks() {
         onMouseEnter={() => dropdownHover(true, 3)}
         onMouseLeave={() => dropdownHover(false, 3)}
       >
-        <Dropdown.Toggle>Dropdown</Dropdown.Toggle>
+        <Dropdown.Toggle as="a">Groceries</Dropdown.Toggle>
 
         <Dropdown.Menu align="right">
           <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
@@ -83,7 +83,7 @@ function NavLinks() {
         onMouseEnter={() => dropdownHover(true, 4)}
         onMouseLeave={() => dropdownHover(false, 4)}
       >
-        <Dropdown.Toggle>Dropdown</Dropdown.Toggle>
+        <Dropdown.Toggle as="a">Books</Dropdown.Toggle>
 
         <Dropdown.Menu align="right">
           <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
@@ -99,7 +99,7 @@ function NavLinks() {
         onMouseEnter={() => dropdownHover(true, 5)}
         onMouseLeave={() => dropdownHover(false, 5)}
       >
-        <Dropdown.Toggle>Dropdown</Dropdown.Toggle>
+        <Dropdown.Toggle as="a">Other</Dropdown.Toggle>
 
         <Dropdown.Menu align="right">
           <Dropdown.Item href="#/action-1">Action</Dropdown.Item>

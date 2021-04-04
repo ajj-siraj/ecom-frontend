@@ -15,3 +15,14 @@ export const footerSocialUnhover = (target, data) => ({
   duration: 0.3,
   width: '10%'
 });
+
+export const dropdownIn = () => ({
+  opacity: 1,
+  y: -20,
+  zIndex: 2000
+})
+export const dropdownOut = () => ({
+  opacity: 0,
+  y: 20,
+  zIndex: -1
+})
