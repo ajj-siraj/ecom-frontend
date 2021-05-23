@@ -1,3 +1,4 @@
+
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 import SearchBar from "./subcomponents/SearchBar";
 import NavIcon from "./subcomponents/NavIcon";
@@ -6,8 +7,8 @@ import NavLinks from "./subcomponents/NavLinks";
 
 import logo from "../assets/logo.svg";
 
-let items1=['cart1','cart2'];
-let items2=['wish1','wish2','wish3','wish4','wish5'];
+let items1=[{name: 'cart1asdfasdfasdfasdfdsfadsfasdfasdfadsf', quantity: 3}, {name: 'cart2', quantity: 7}, {name: 'cart3', quantity: 1}]
+let items2=[{name: 'wish1'}, {name: 'wish2'}];
 
 function Header() {
   return (

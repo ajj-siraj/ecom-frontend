@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import { Dropdown } from "react-bootstrap";
 import gsap from "gsap";
-
+import CustomDropdownItem from "./CustomDropdownItem";
 import * as animations from "../../util/animations";
 
 function NavIcon({ type, items }) {
@@ -41,8 +41,8 @@ function NavIcon({ type, items }) {
       </Dropdown.Toggle>
 
       <Dropdown.Menu align="right" className="cart-dropdown">
-        {items.map((item) => (
-          <Dropdown.Item href="#/action-1">{item}</Dropdown.Item>
+        {items.map((item, idx) => (
+          <CustomDropdownItem item={item} href={"#"} key={`custom-cart-dropdown-item-${idx}`}/>
         ))}
       </Dropdown.Menu>
       

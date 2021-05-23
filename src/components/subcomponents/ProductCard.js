@@ -1,6 +1,21 @@
-import { Row, Col, Card } from "react-bootstrap";
+import { useState } from "react";
+import { Row, Col, Card, Button, Modal } from "react-bootstrap";
 
 function ProductCard({ product }) {
+  let [showModal, setShow] = useState(false);
+
+  const addToCart = (product) => {
+    console.log(product.name);
+  };
+
+  const viewModal = (product) => {
+    setShow(true);
+  };
+
+  const closeModal = () => {
+    setShow(false);
+  };
+
   return (
     <Card className="product-card">
       <div className="product-card-img" style={{ backgroundImage: `url("${product.img}")` }} />
@@ -13,6 +28,34 @@ function ProductCard({ product }) {
         <div>${product.price}</div>
         <div>{product.category}</div>
       </div>
+      <div className="product-card-buttons">
+        <Button block className="btn-outline-dark" onClick={() => addToCart(product)}>
+          <i className="fa fa-shopping-cart pr-3"></i>Add to Cart
+        </Button>
+        <Button block className="btn-outline-dark" onClick={() => viewModal(product)}>
+          <i className="fa fa-search pr-3"></i>View
+        </Button>
+      </div>
+      <Modal show={showModal} onHide={closeModal}>
+        <Modal.Header closeButton>
+          <Modal.Title>{product.name}</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <Row>
+            <Col><div className="modal-product-img"><img src={product.img}/></div></Col>
+            <Col>Product Details</Col>
+          </Row>
+          
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={closeModal}>
+            Close
+          </Button>
+          <Button variant="primary" onClick={closeModal}>
+            Save Changes
+          </Button>
+        </Modal.Footer>
+      </Modal>
     </Card>
   );
 }
