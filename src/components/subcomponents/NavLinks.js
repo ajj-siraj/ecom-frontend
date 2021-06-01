@@ -1,18 +1,42 @@
 import { useState } from "react";
 import { Nav, Dropdown } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 function NavLinks() {
   let [hoverState, setHoverState] = useState([false, false, false, false, false, false]);
 
   const dropdownHover = (state, index) => {
     let newState = [false, false, false, false, false, false];
-    newState[index] = state
+    newState[index] = state;
     setHoverState(newState);
   };
 
+  const categories = [
+    {name: "Electronics", link: "electronics"},
+    {name: "Home & Kitchen", link: "home-and-kitchen"},
+    {name: "Books & Printables", link: "books-and-printables"},
+    {name: "Groceries", link: "groceries"},
+    {name: "Fashion", link: "fashion"},
+    {name: "Other", link: "other"}
+  ];
+
   return (
     <>
-      <Dropdown
+      {categories.map((category, idx) => {
+        return (
+          <Link to={`/category/${category.link}`} key={`${category.name}-${idx}`}>
+            <a className="navbar-links nav-link">{category.name}</a>
+          </Link>
+        );
+      })}
+    </>
+  );
+}
+
+export default NavLinks;
+
+{
+  /* <Dropdown
         className="navbar-links nav-link"
         
         show={hoverState[0]}
@@ -106,9 +130,5 @@ function NavLinks() {
           <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
           <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
         </Dropdown.Menu>
-      </Dropdown>
-    </>
-  );
+      </Dropdown> */
 }
-
-export default NavLinks;

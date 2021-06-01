@@ -47,7 +47,7 @@
   top: 35px;
 }
 
-.main-nav .navbar-links.dropdown {
+.main-nav .navbar-links {
   border-right: 1px solid #ddd;
 
   margin-top: 10px;
@@ -102,14 +102,13 @@
   margin-right: 20px;
   padding: 0;
   width: fit-content;
-  
+  border-radius: 50%;
   transition: all 0.2s;
 }
 
 .cart-container:hover {
   cursor: pointer;
   background-color: #1d1d1d;
-  border-radius: 50%;
 }
 
 .cart-container:hover i {

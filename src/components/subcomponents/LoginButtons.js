@@ -1,10 +1,14 @@
-
+import { Link } from "react-router-dom";
 
 function LoginButtons() {
   return (
     <div>
-      <a className="btn btn-outline-dark">Sign Up</a>
-      <a className="btn btn-outline-dark">Login</a>
+      <Link to="/signup">
+        <a className="btn btn-outline-dark">Sign Up</a>
+      </Link>
+      <Link to="/login">
+        <a className="btn btn-outline-dark">Login</a>
+      </Link>
     </div>
   );
 }

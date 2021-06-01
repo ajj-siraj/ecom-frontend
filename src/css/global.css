@@ -40,3 +40,11 @@ a, a:hover, a:active, a:visited{
 .products-container .card-group{
   width: 100%;
 }
+
+/* form styles */
+.form-container{
+  background-color: #f8f8f8;
+  border-radius: 20px;
+  padding: 50px;
+  box-shadow: 0px 0px 10px #c5c5c5;
+}

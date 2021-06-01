@@ -1,11 +1,18 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Row, Col, Card, Button, Modal } from "react-bootstrap";
-
+import {Ctx} from "../../Context";
 function ProductCard({ product }) {
+
+  let ctx = useContext(Ctx);
+  const {dispatch} = ctx;
+
+  console.log("Context: ");
+
   let [showModal, setShow] = useState(false);
 
   const addToCart = (product) => {
     console.log(product.name);
+    dispatch({type: 'ADD_TO_CART', payload: product})
   };
 
   const viewModal = (product) => {
